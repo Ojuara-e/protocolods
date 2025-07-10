@@ -1,0 +1,396 @@
+/* Estilos responsivos - Protocolo de Domínio Social */
+
+/* Abordagem Mobile-First */
+/* Estilos base já são para mobile */
+
+/* Ajustes específicos para dispositivos muito pequenos */
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+  
+  .container {
+    width: 95%;
+    padding: 0 10px;
+  }
+  
+  .section {
+    padding: 50px 0;
+  }
+  
+  header {
+    padding: 15px 0;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+  }
+  
+  .hero {
+    height: auto;
+    min-height: 100vh;
+    padding: 100px 0 50px;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .btn {
+    padding: 12px 20px;
+    font-size: 0.9rem;
+  }
+  
+  .btn-grande {
+    padding: 15px 25px;
+    font-size: 1rem;
+  }
+  
+  .sobre h2,
+  .fases-header h2,
+  .depoimentos-header h2,
+  .contato-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  .fase-texto h3 {
+    font-size: 1.6rem;
+  }
+  
+  .fase-texto h4 {
+    font-size: 1.1rem;
+  }
+  
+  .produto-card {
+    margin-bottom: 20px;
+  }
+  
+  .produto-img {
+    height: 160px;
+  }
+  
+  .produto-info {
+    padding: 20px;
+  }
+  
+  .produto-info h4 {
+    font-size: 1.2rem;
+  }
+  
+  .depoimento-card {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .depoimento-texto {
+    font-size: 1rem;
+  }
+  
+  .contador {
+    gap: 10px;
+  }
+  
+  .contador-item {
+    min-width: 45%;
+    margin-bottom: 15px;
+  }
+  
+  .contador-numero {
+    font-size: 1.8rem;
+  }
+  
+  .form-control {
+    padding: 10px;
+  }
+  
+  .footer-grid {
+    gap: 30px;
+  }
+}
+
+/* Dispositivos móveis padrão */
+@media (min-width: 481px) and (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+  
+  .container {
+    width: 90%;
+  }
+  
+  .section {
+    padding: 60px 0;
+  }
+  
+  .hero {
+    height: auto;
+    min-height: 100vh;
+    padding: 110px 0 60px;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero p {
+    font-size: 1.05rem;
+  }
+  
+  .hero-cta {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .hero-cta .btn {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .sobre-grid,
+  .fase-inner,
+  .contato-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  nav ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--cor-secundaria);
+    padding: 20px;
+    flex-direction: column;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+  }
+  
+  nav ul.active {
+    display: flex;
+  }
+  
+  nav ul li {
+    margin: 0 0 15px 0;
+  }
+  
+  .menu-mobile {
+    display: block;
+  }
+  
+  .fases-tabs {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .fase-tab {
+    width: 100%;
+    text-align: center;
+    padding: 12px 20px;
+  }
+  
+  .metricas {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .cta-content h2 {
+    font-size: 2.2rem;
+  }
+  
+  .produto-card {
+    margin-bottom: 20px;
+  }
+}
+
+/* Tablets e dispositivos médios */
+@media (min-width: 769px) and (max-width: 992px) {
+  .container {
+    max-width: 90%;
+  }
+  
+  .hero h1 {
+    font-size: 3.2rem;
+  }
+  
+  .sobre-grid,
+  .fase-inner,
+  .contato-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .metricas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .fase-produtos {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+}
+
+/* Desktops e telas maiores */
+@media (min-width: 993px) {
+  .container {
+    max-width: 1200px;
+  }
+  
+  .hero h1 {
+    font-size: 4rem;
+  }
+  
+  .sobre-grid,
+  .fase-inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
+  
+  .contato-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
+  
+  .footer-grid {
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 50px;
+  }
+  
+  .metricas {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .menu-mobile {
+    display: none;
+  }
+  
+  nav ul {
+    display: flex;
+  }
+}
+
+/* Melhorias específicas para experiência mobile */
+@media (max-width: 768px) {
+  /* Menu mobile aprimorado */
+  .header-container {
+    position: relative;
+  }
+  
+  .menu-mobile {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 0, 102, 0.1);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .menu-mobile:hover {
+    background-color: rgba(255, 0, 102, 0.2);
+  }
+  
+  nav ul {
+    border-radius: 0 0 8px 8px;
+    border-top: 3px solid var(--cor-destaque-1);
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 10px 0;
+    width: 100%;
+  }
+  
+  /* Botões mais fáceis de tocar */
+  .btn {
+    padding: 15px 25px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Melhor espaçamento para leitura */
+  p, .fase-texto ul li, .sobre-diferencial ul li {
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+  }
+  
+  /* Formulários mais fáceis de preencher */
+  .form-control {
+    padding: 15px;
+    font-size: 16px; /* Evita zoom em iOS */
+    margin-bottom: 5px;
+  }
+  
+  .form-group {
+    margin-bottom: 25px;
+  }
+  
+  /* Melhor visualização de depoimentos */
+  .depoimento-card {
+    margin-bottom: 30px;
+  }
+  
+  /* Ajustes para tabs */
+  .fase-tab {
+    margin-bottom: 5px;
+    border-radius: 4px;
+  }
+  
+  /* Melhor visualização de produtos */
+  .produto-card {
+    margin-bottom: 25px;
+  }
+  
+  /* Ajustes para CTA final */
+  .cta-escassez {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+  
+  /* Footer mais compacto */
+  footer {
+    padding: 40px 0 20px;
+  }
+  
+  .footer-titulo {
+    margin-bottom: 1.2rem;
+  }
+  
+  /* Sticky header para melhor navegação */
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(13, 13, 13, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Ajustes para imagens em cards */
+  .produto-img {
+    height: 180px;
+  }
+  
+  /* Melhor visualização de métricas */
+  .metrica-item {
+    padding: 15px;
+    background-color: rgba(26, 26, 26, 0.5);
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+}
