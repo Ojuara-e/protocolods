@@ -68,17 +68,6 @@ By studying this project, you can see:
 Just open the live site:  
 👉 https://protocolods.vercel.app
 
-### Run Locally
-1. Clone the repository:  
-   ```bash
-   git clone https://github.com/Ojuara-e/protocolods.git
-````
-
-2. Open the folder in your favorite editor
-3. Open `index.html` in your browser
-
----
-
 ## 📝 Notes
 
 This project was developed as a **real client request** — to help promote and present online courses effectively and professionally.
