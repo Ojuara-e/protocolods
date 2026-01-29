@@ -1,4 +1,4 @@
-# Protocolods — Landing Page for Course Promotion
+# Protocolods: Landing Page for Course Promotion
 
 ![HTML](https://img.shields.io/badge/HTML5-Structured-orange)
 ![CSS](https://img.shields.io/badge/CSS3-Styling-blue)
@@ -144,5 +144,3 @@ Acesse diretamente:
 ## 📝 Observações
 
 Este projeto foi desenvolvido como uma **solicitação real de um cliente**, com objetivo de promover e apresentar cursos de forma clara e profissional.
-
-```
